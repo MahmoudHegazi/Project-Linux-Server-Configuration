@@ -9,7 +9,6 @@
 ## user grader has sudo access 
 
 ![app image](https://github.com/MahmoudHegazi/Project-Linux-Server-Configuration/blob/master/working.JPG)
-<img src="https://github.com/MahmoudHegazi/Project-Linux-Server-Configuration/blob/master/working.JPG">
 
 
 ## third-party resources I made use of to complete this projet:
