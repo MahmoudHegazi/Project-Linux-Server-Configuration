@@ -4,10 +4,12 @@
 * second server on : http://18.196.30.95/ 
 * SSH port : 2200
 * HTTP port: 80
+* user grader has sudo access 
 
-## user grader has sudo access 
-
+## screenshot
 ![app image](https://github.com/MahmoudHegazi/Project-Linux-Server-Configuration/blob/master/working.JPG)
+
+## I finally finished the program:
 ![certificate image](Cert.JPG)
 
 ## third-party resources I made use of to complete this projet:
