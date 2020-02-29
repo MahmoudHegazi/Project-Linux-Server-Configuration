@@ -205,28 +205,28 @@ Restart Apache
 ## Errors Handling (Big Errors):
 
 ### 1- Import Error No module name ..... (this has 3 answers):
-*.  detect your python app version 2 or 3
-*.  use apt-get install for this package first to install it on your machine
-*.  CD /var/www/FlaskApp/FlaskApp , and use sudo pip install module name
-*.  some modules not updated error like oauth2client check my solve below
+*  detect your python app version 2 or 3
+*  use apt-get install for this package first to install it on your machine
+*  CD /var/www/FlaskApp/FlaskApp , and use sudo pip install module name
+*  some modules not updated error like oauth2client check my solve below
 
 ## (Example1): No module named 'oauth2client' 
 I'm using python3 in project to check your python verison try this pip -V python -V
-1- sudo apt-get install python3-oauth2client 
-2- sudo pip install --upgrade oauth2client
-3- sudo -H pip install --upgrade google-api-python-client
+1. sudo apt-get install python3-oauth2client 
+2. sudo pip install --upgrade oauth2client
+3. sudo -H pip install --upgrade google-api-python-client
 
 
 -----------------------------------------------------------------------------------------------------
 
 ## (Example2): No module named 'httplib2'  
-1- sudo pip install httplib2  (python2)
-2- sudo pip install --upgrade pip
-3- I was thinking after I used pip install httplib2 it would solve the problem but nope
-4- I found I have to install the packge first using apt-get so to solve this error use this command
-5- sudo apt-get install python-httplib2 if you still has the same error try this  command
-6- pip2 install httplib2 --upgrade  (python2)
-7- pip3 install httplib2 --upgrade (python3)
+1. sudo pip install httplib2  (python2)
+2. sudo pip install --upgrade pip
+3. I was thinking after I used pip install httplib2 it would solve the problem but nope
+4. I found I have to install the packge first using apt-get so to solve this error use this command
+5. sudo apt-get install python-httplib2 if you still has the same error try this  command
+6. pip2 install httplib2 --upgrade  (python2)
+7. pip3 install httplib2 --upgrade (python3)
 
 Please Note The command solved this problem for me was:
 sudo apt-get install python3-httplib2
@@ -234,9 +234,9 @@ sudo apt-get install python3-httplib2
 -----------------------------------------------------------------------------------------------------
 
 ## (Example3): No module named 'database_setup'
-*. this error takes from me alot to solve it the answer is simple 
-*. just add  .  before the database_setup
-*. cd /var/www/FlaskApp/FlaskApp , nano __init__.py  , add . before database_setup
+* this error takes from me alot to solve it the answer is simple 
+* just add  .  before the database_setup
+* cd /var/www/FlaskApp/FlaskApp , nano __init__.py  , add . before database_setup
 
 from .database_setup import Base, Car, CarType, User
 
@@ -244,25 +244,25 @@ from .database_setup import Base, Car, CarType, User
 
 ## (Example4): FileNotFoundError:[Errno 2] No such file or directory: 'client_secret...'
 
-*. if you reched this error you are 1 step away from configure the lightsail so how we fix it.
-*. Please Note at the project we did we didn't specify the path for the secret key just add var with app path
+* if you reched this error you are 1 step away from configure the lightsail so how we fix it.
+* Please Note at the project we did we didn't specify the path for the secret key just add var with app path
 
-*. like this: basedir = '/var/www/FlaskApp/FlaskApp/'     
-*. CLIENT_ID = json.loads(open(basedir + 'client_secret.json', 'r').read())['web']['client_id']
+* like this: basedir = '/var/www/FlaskApp/FlaskApp/'     
+* CLIENT_ID = json.loads(open(basedir + 'client_secret.json', 'r').read())['web']['client_id']
 
 ----------------------------------------------------------------------------------------------------------
 
 ## Important notes:
 
-1- after each fix or command use this: sudo service apache2 reload  
-2- to check the new error after visit your IP use this command: tail -f /var/log/apache2/error.log
-3- if you got error no () next print , I solve this by using the python3 print syntax Like this print("hello")
-4- make sure you are using pip in the app dir cd /var/www/FlaskApp/FlaskApp
-5- make it app.run() in you __init__.py.
-6- make sure from the name of your secret key.json and the secret key in the project.
-7- some errors for no Module name ... can be solved without using pip install module name
-8- use python __init__.py to check for errors in the app or python database_setup.py to check the errors in the database
-9- replace the engine in __init__.py and lotsofcars.py and database_setup.py to this
+1. after each fix or command use this: sudo service apache2 reload  
+2. to check the new error after visit your IP use this command: tail -f /var/log/apache2/error.log
+3. if you got error no () next print , I solve this by using the python3 print syntax Like this print("hello")
+4. make sure you are using pip in the app dir cd /var/www/FlaskApp/FlaskApp
+5. make it app.run() in you __init__.py.
+6. make sure from the name of your secret key.json and the secret key in the project.
+7. some errors for no Module name ... can be solved without using pip install module name
+8. use python __init__.py to check for errors in the app or python database_setup.py to check the errors in the database
+9. replace the engine in __init__.py and lotsofcars.py and database_setup.py to this
 engine = create_engine('postgresql://catalog:password@localhost/catalog')
 
 ### "note catalog is database name and other catalog is the database user we created early"
