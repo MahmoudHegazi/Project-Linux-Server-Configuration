@@ -14,10 +14,10 @@
 
 ## third-party resources I made use of to complete this projet:
 
-1-  google Ouath2 for google signup.
-2-  Flask Docs
-3-  PostgreSQL Docs
-4-  Apache Docs
+1.  google Ouath2 for google signup.
+2.  Flask Docs
+3.  PostgreSQL Docs
+4.  Apache Docs
 
 ## summary of software installed
 1. apache2
