@@ -62,12 +62,20 @@
 > Only allow connections for SSH (port 2200), HTTP (port 80), and NTP (port 123):
  
 > sudo ufw default deny incoming
+
 > sudo ufw default allow outgoing 
-> sudo ufw allow 2200/tcp  (don't forget to add custom tcp 2200 on network in lighsail and change it in config to us port 2200)
+
+> sudo ufw allow 2200/tcp  
+(don't forget to add custom tcp 2200 on network in lighsail and change it in config to us port 2200)
+
 > sudo ufw allow 80/tcp
+
 > sudo ufw allow 123/udp
+
 > sudo ufw enable
+
 > sudo allow ssh
+
 > sudo allow www
 
 
