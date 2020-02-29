@@ -1,6 +1,7 @@
 # Project-Linux-Server-Configuration
 
 ##  The IP address: 3.120.172.142
+##  second server on : http://18.196.30.95/
 
 ##  SSH port : 2200
 
