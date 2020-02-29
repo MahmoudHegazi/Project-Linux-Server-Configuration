@@ -205,10 +205,10 @@ Restart Apache
 ## Errors Handling (Big Errors):
 
 ### 1- Import Error No module name ..... (this has 3 answers):
-*. detect your python app version 2 or 3
-*. use apt-get install for this package first to install it on your machine
-*. CD /var/www/FlaskApp/FlaskApp , and use sudo pip install module name
-*. some modules not updated error like oauth2client check my solve below
+*.  detect your python app version 2 or 3
+*.  use apt-get install for this package first to install it on your machine
+*.  CD /var/www/FlaskApp/FlaskApp , and use sudo pip install module name
+*.  some modules not updated error like oauth2client check my solve below
 
 ## (Example1): No module named 'oauth2client' 
 I'm using python3 in project to check your python verison try this pip -V python -V
