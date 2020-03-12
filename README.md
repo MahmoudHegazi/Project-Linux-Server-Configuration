@@ -14,8 +14,6 @@
 ## screenshot
 ![app image](https://github.com/MahmoudHegazi/Project-Linux-Server-Configuration/blob/master/working.JPG)
 
-## I finally finished the program:
-![certificate image](Cert.JPG)
 
 ## third-party resources I made use of to complete this projet:
 
@@ -361,4 +359,5 @@ def showLogin():
 
 
 
-
+## I finally finished the program:
+![certificate image](Cert.JPG)
