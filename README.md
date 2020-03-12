@@ -1,10 +1,15 @@
-# Project-Linux-Server-Configuration
+# Project-Linux-Server-Configuration {Fixed All errors 100% working}
 
-* The IP address: 3.120.172.142 http://3.120.172.142/
-* second server on : http://18.196.30.95/ 
+>  If you can read this ReadMe.md file you will able to configure a linux vm using Lightsail and make it 
+>  serve your web applaction outgoing and incoming (Server)
+
+* The IP address:  http://18.196.30.95/ 
 * SSH port : 2200
 * HTTP port: 80
-* user grader has sudo access 
+* user grader has sudo access
+
+
+*  [ Old Server: 3.120.172.142  ]
 
 ## screenshot
 ![app image](https://github.com/MahmoudHegazi/Project-Linux-Server-Configuration/blob/master/working.JPG)
@@ -303,6 +308,55 @@ https://github.com/jungleBadger/-nanodegree-linux-server
 https://knowledge.udacity.com/questions/24195
 https://stackoverflow.com/questions/17309288/importerror-no-module-named-requests
 
+
+## some errors and how to fix them:
+
+ 1. don't forget like me to eddit any link refer to localhost: and put your lightsail public IP.
+ 2. google OAUTH will not work without domain name so you have to stop Oauth  if you will not get public IP
+ 3. { CD FlaskApp } {sudo nano app.py } just to fix OAUTH add try: and except: when check for login_session in all funtion.
+ 4. if you didn't get a domain name so you will not never able to login to your app using google.
+ 5. so you have to change render_template('publicmenu.html') to render_template('menu.html') until you get domain name.
+ 6. Important (Know Which Python version you use to build this app "some function in python2 will not work in python3 
+ And vice versa.
+
+## Python3 error (Using python2 xrange() in python3 applaction) 
+
+```python2
+
+#python2
+
+@app.route('/login')
+def showLogin():
+    # the next line work in python2 only if you face errors use the next one
+    
+    state = ''.join(random.choice(string.ascii_uppercase + string.digits) for x in  xrange(32))
+    login_session['state'] = state
+    # render a login template
+    return render_template('login.html',STATE=state)
+    
+```
+## If you get any error here remove every thing and make it like this
+
+```python3
+python3
+
+@app.route('/login')
+def showLogin():
+    return render_template('login.html')
+    
+```
+
+## this error Important when you change your app from local host you have to change this function:
+
+```python
+
+  if __name__ == '__main__':
+      app.secret_key = '[Your Secret Key]'
+      app.debug = True
+      app.run(host='[Your lightsail ip]', port='[add the port]', threaded=False)
+      
+
+``` 
 
 
 
