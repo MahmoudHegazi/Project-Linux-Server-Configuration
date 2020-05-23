@@ -110,6 +110,7 @@ Check if no remote connections are allowed sudo vim /etc/postgresql/9.3/main/pg_
 
 > Login as user "postgres" sudo su - postgres
 
+
 > Get into postgreSQL shell psql
 
 ## Create a new database named catalog and create a new user named catalog in postgreSQL shell
