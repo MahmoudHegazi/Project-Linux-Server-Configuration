@@ -58,7 +58,7 @@
 7. chmod 700 .ssh
 8. chmod 644 .ssh/authorized_keys I aDownloaded the key from lighsail 
 
->  vi /etc/ssh/sshd_config 
+>  sudo vi /etc/ssh/sshd_config
 and then change Port 22 to Port 2200 , save & quit.  
 > i to insert then to edit this type of folder :wq = save and quit
 
