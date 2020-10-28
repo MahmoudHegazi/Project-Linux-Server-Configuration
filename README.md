@@ -204,6 +204,13 @@ Configure and Enable a New Virtual Host
 
 > sudo a2ensite FlaskApp
 
+
+> do this command 
+
+``` aws
+sudo systemctl reload apache2
+```
+
 ## Create the .wsgi File
 
 * Apache uses the .wsgi file to serve the Flask app. Move to the /var/www/FlaskApp directory 
