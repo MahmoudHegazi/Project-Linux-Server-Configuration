@@ -49,7 +49,7 @@
 
 1. Download keypair 
 2. use sudo apt-get update   and   apt-get upgrade
-3. sudo apt-install finger
+3. sudo apt-get install finger
 4. sudo adduser grader
 5. give grader access sudo  by creating this file using this command
 > nano /etc/sudoers.d/grader  then add the following line 
