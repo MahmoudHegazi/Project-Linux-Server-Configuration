@@ -128,6 +128,7 @@ Check if no remote connections are allowed sudo vim /etc/postgresql/9.3/main/pg_
 
 > Exit from user "postgres"
 
+> LOGIN to User Created psql -h localhost -d course -U admin -p 5432
 exit
 
 * Install Git using sudo apt-get install git
