@@ -25,6 +25,7 @@ migrate = Migrate(app, db)
 $ sudo su - postgres 
 $ dropdb [your database name]
 $ createdb [new_name]
+$ flask db init
 $ flask db stamp head
 $ flask db migrate
 $ flask db upgrade
