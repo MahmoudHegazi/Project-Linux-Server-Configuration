@@ -15,6 +15,20 @@
 ![app image](https://github.com/MahmoudHegazi/Project-Linux-Server-Configuration/blob/master/working.JPG)
 
 
+## Migretion 
+```python from flask_migrate import Migrate
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+```
+
+
+$ sudo su - postgres 
+$ dropdb [your database name]
+$ createdb [new_name]
+$ flask db stamp head
+$ flask db migrate
+$ flask db upgrade
+
 ## third-party resources I made use of to complete this projet:
 
 1.  google Ouath2 for google signup.
