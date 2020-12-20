@@ -22,13 +22,13 @@ migrate = Migrate(app, db)
 ```
 
 
-$ sudo su - postgres 
-$ dropdb [your database name]
-$ createdb [new_name]
-$ flask db init
-$ flask db stamp head
-$ flask db migrate
-$ flask db upgrade
+* $ sudo su - postgres 
+* $ dropdb [your database name]
+* $ createdb [new_name]
+* $ flask db init
+* $ flask db stamp head
+* $ flask db migrate
+* $ flask db upgrade
 
 ## third-party resources I made use of to complete this projet:
 
