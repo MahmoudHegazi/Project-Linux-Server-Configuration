@@ -391,7 +391,7 @@ def showLogin():
 ## Master Git
 
 
-to view branches git remote -v (read from git folder)
+to view branches git remote -v (read from git folder (config))
 
 ### (create new branch then push)
 1. git checkout -b <branchname> create new branch and switch to it  (-b) create new branch and switch) without -b switch to exist
