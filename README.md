@@ -388,6 +388,28 @@ def showLogin():
 
 
 
+## Master Git
+
+
+to view branches git remote -v (read from git folder)
+
+### (create new branch then push)
+1. git checkout -b <branchname> create new branch and switch to it  (-b) create new branch and switch) without -b switch to exist
+2. git add branch  connect-branch-with-repoURL  ( git remote add custom-style git@gitlab.com:mahmoudhegazy/testproject.git) 
+3. git add . (upload/select files)
+4. git commit -am 'comment' add changes to commit
+5. git push --set-upstream (branch) (branch) custom-style custom-style   (push things and set upstream) 
+
+------------------------
+
+### new repo:
+1. git init create .git folder and items needed
+2. git git remote add orgin git@gitlab.com:mahmoudhegazy/testproject.git  (apply the repourl to this uploads) where going
+3. git add . (maybe connect git items to repo) upload/select 
+4. git commit -am 'comment' apply changes 
+5. (git push --set-upstream orgin master) push changes to master (main)
+6. git push -u --all (set up to track remote branch 'master' from 'orgin')
+
 
 ## I finally finished the program:
 ![certificate image](Cert.JPG)
