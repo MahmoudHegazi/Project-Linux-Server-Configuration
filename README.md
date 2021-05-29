@@ -410,6 +410,10 @@ to view branches git remote -v (read from git folder (config))
 5. (git push --set-upstream orgin master) push changes to master (main)
 6. git push -u --all (set up to track remote branch 'master' from 'orgin')
 
+------------------------
+# fetch with the branch
+1- git pull 
+2- git checkout fix-developer
 
 ## I finally finished the program:
 ![certificate image](Cert.JPG)
