@@ -417,3 +417,20 @@ to view branches git remote -v (read from git folder (config))
 
 ## I finally finished the program:
 ![certificate image](Cert.JPG)
+	
+	
+
+	
+# host flask using wsgi app object
+```
+import imp
+import os
+import sys
+
+
+sys.path.insert(0, os.path.dirname(__file__))
+
+wsgi = imp.load_source('wsgi', 'public_html/main.py')
+application = wsgi.public_html
+
+```
