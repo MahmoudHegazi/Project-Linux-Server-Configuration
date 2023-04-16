@@ -218,6 +218,10 @@ Configure and Enable a New Virtual Host
 
 > Save and close the file.
 
+
+> sudo apt-get install libapache2-mod-wsgi-py3
+> sudo a2enmod wsgi
+
 > sudo a2ensite FlaskApp
 
 
