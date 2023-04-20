@@ -146,6 +146,12 @@ Check if no remote connections are allowed sudo vim /etc/postgresql/9.3/main/pg_
 > LOGIN to User Created psql -h localhost -d course -U admin -p 5432
 exit
 
+# for mysql ubuntu
+* install mysql-server
+* install mysql-config > sudo apt-get install libmysqlclient-dev
+* install mysql-client (mysqldb) > sudo pip install mysqlclient
+
+
 * Install Git using sudo apt-get install git
 * Use cd /var/www to move to the /var/www directory
 * Create the application directory sudo mkdir FlaskApp
@@ -438,3 +444,22 @@ wsgi = imp.load_source('wsgi', 'public_html/main.py')
 application = wsgi.public_html
 
 ```
+# usefull paths:
+* /var/www (PUBLIC folder)
+* /var/log/apache2/  (apache2 logs, eg: server errors (module not found) )
+* /etc/apache2/ (apache2 config folders, eg: the website config file (eg: myapp.conf)
+* /etc/apache2/sites-available (the conf file for websites avail, for example myapp.conf (this conf file can be activate and selected as current active website)
+	
+#### to enable config file:
+> sudo a2ensite FlaskApp
+#### to disable config file
+> sudo a2dissite FlaskApp
+
+!note: when activate apache2 config file new conf file created in /etc/apache2/sites-enabled (it removed when disable the website) > (sudo a2dissite FlaskApp)
+	
+
+#### in wsgi
+> from app import app
+#### means in the current directory of wsgi there are folder named app and inside this folder there are __init__.py file contains the Flask app
+
+
