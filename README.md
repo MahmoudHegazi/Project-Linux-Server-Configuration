@@ -449,7 +449,8 @@ application = wsgi.public_html
 * /var/log/apache2/  (apache2 logs, eg: server errors (module not found) )
 * /etc/apache2/ (apache2 config folders, eg: the website config file (eg: myapp.conf)
 * /etc/apache2/sites-available (the conf file for websites avail, for example myapp.conf (this conf file can be activate and selected as current active website)
-	
+* /etc/apache2/sites-enabled
+
 #### to enable config file:
 > sudo a2ensite FlaskApp
 #### to disable config file
