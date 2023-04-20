@@ -459,7 +459,7 @@ application = wsgi.public_html
 !note: when activate apache2 config file new conf file created in /etc/apache2/sites-enabled (it removed when disable the website) > (sudo a2dissite FlaskApp)
 	
 ### mysql notes:
-* sometimes in lightsail no previlige to grant user previliages, and no way to login mysql root user without password, to solve this set password for root and use the root user in db connection
+* sometimes in lightsail no privilege to grant user privileges, and no way to login mysql root user without password, to solve this set password for root and use the root user in db connection
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost
 	
