@@ -462,7 +462,15 @@ application = wsgi.public_html
 * sometimes in lightsail no privilege to grant user privileges, and no way to login mysql root user without password, to solve this set password for root and use the root user in db connection
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost
-	
+
+#### Solution 4: Install libmysqlclient-dev
+If you’re getting errors when trying to install the mysql module, it’s likely because you don’t have the libmysqlclient-dev library installed. To install it, just run:
+* needed for python work with mysql.
+* > sudo pip install mysql-server mysql-client
+* must set password for root user to make python login with root user
+* root password need updated with ALTER USER > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newPassword';
+
+
 
 #### in wsgi
 > from app import app
