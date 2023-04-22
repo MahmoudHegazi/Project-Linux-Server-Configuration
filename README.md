@@ -475,5 +475,9 @@ If you’re getting errors when trying to install the mysql module, it’s likel
 #### in wsgi
 > from app import app
 #### means in the current directory of wsgi there are folder named app and inside this folder there are __init__.py file contains the Flask app
+	
+
+#### https:
+certbot need domain name to work: https://blog.yasithab.com/ubuntu/configure-lets-encrypt-ssl-on-ubuntu/
 
 
