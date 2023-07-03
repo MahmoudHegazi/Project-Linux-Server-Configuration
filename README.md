@@ -324,10 +324,7 @@ from .database_setup import Base, Car, CarType, User
 
 Exception: Can not find valid pkg-config name.
   Specify MYSQLCLIENT_CFLAGS and MYSQLCLIENT_LDFLAGS env vars manually
-# fix by !libmysqlclient
-```git
-sudo apt-get install -y gcc default-libmysqlclient-dev pkg-config
-```
+###### fix by !libmysqlclient ```git sudo apt-get install -y gcc default-libmysqlclient-dev pkg-config```
 
 -----------------------------------------------------------------------------------------------------
 
