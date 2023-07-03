@@ -320,6 +320,18 @@ from .database_setup import Base, Car, CarType, User
 * CLIENT_ID = json.loads(open(basedir + 'client_secret.json', 'r').read())['web']['client_id']
 
 ----------------------------------------------------------------------------------------------------------
+## (Example5): ERROR: Command errored out with exit status 1...'
+
+Exception: Can not find valid pkg-config name.
+  Specify MYSQLCLIENT_CFLAGS and MYSQLCLIENT_LDFLAGS env vars manually
+# fix by !libmysqlclient
+```git
+sudo apt-get install -y gcc default-libmysqlclient-dev pkg-config
+```
+
+-----------------------------------------------------------------------------------------------------
+
+
 
 ## Important notes:
 
