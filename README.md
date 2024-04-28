@@ -124,7 +124,7 @@ and then change Port 22 to Port 2200 , save & quit.
 #### install postgres2
 
 1. ```sudo apt install libpq-dev python3-dev```
-2. ```sudo apt install libpq-dev python3-dev```
+2. ```sudo pip install psycopg2```
 
 Check if no remote connections are allowed sudo vim /etc/postgresql/9.3/main/pg_hba.conf
 
