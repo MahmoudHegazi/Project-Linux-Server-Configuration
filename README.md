@@ -489,6 +489,9 @@ If you’re getting errors when trying to install the mysql module, it’s likel
 #### in wsgi
 > from app import app
 #### means in the current directory of wsgi there are folder named app and inside this folder there are __init__.py file contains the Flask app
+
+
+# #!/usr/bin/env python3 tells wsgi file the python path to be executed
 	
 
 #### https:
